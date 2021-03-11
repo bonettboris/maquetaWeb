@@ -1,0 +1,235 @@
+@import './Variables.scss';
+
+header {
+    background: #ffffff;
+    box-shadow: 0px 1px 20px #6C6C6C;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    background: #1883fe;
+
+    .containerUl {
+        height: 100%;
+        width: 50%;
+    }
+
+    .enlaces {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        color: #ffffff;
+        height: 30px;
+        font-family: $nunito;
+        font-size: 13px;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    li:hover, li:focus {
+        background-size: 100% 3px;
+    }
+}
+
+.containerIcon {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
+    margin-bottom: 7px;
+    
+    .containersearch {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        .search {
+            width: 25px;
+            margin-bottom: 1px;
+        }
+    }
+
+    .containerlista {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 8%;
+
+        .lista {
+            width: 30px;
+        }
+
+        p {
+            height: 21px;
+            font-family: $nunito;
+            font-size: 11px;
+            margin-left: 10px;
+            cursor: default;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+    .containerbandera {
+        width: 45px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 8%;
+
+        .bandera {
+            width: 40px;
+            display: flex;
+            margin-bottom: 2px;
+        }
+
+        p {
+            height: 24px;
+            margin-left: 5px;
+            cursor: default;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+}
+
+.containerlogo {
+    display: flex;
+    align-items: center;
+
+    .logotipo {
+        width: 120px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+   .container {
+       padding: 0 1%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 1%;
+
+        li {
+            font-size: 8px;
+            margin-left: 4px;
+        }
+    }
+
+    .containerlogo {
+        .logotipo {
+            width: 75px;
+            height: 49px;
+            margin-top: 30px;
+        }
+    }
+
+    .containerIcon {
+
+        .containersearch {
+    
+            .search {
+                width: 16px;
+                margin-bottom: 8px;
+            }
+        }
+
+    }
+
+    .containerIcon {
+        .containerlista {
+            .lista {
+                width: 20px;
+                margin-bottom: 6px;
+            }
+
+            p {
+                font-size: 6px;
+                margin-left: 0;
+            }
+        }
+
+        .containerbandera {
+            .bandera {
+                width: 28px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 11px;
+                height: 23px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        flex-flow: column-reverse;
+        padding: 0;
+
+        .containerUl {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .enlaces {
+            display: flex;
+            width: 70%;
+            align-items: flex-end;
+            height: 100%;
+        }
+
+        li {
+            font-size: 9px;
+            margin-left: 5px;
+        }
+    }
+
+    .containerlogo {
+        .logotipo {
+            margin-top: 12px;
+        }
+    }
+
+    .containerIcon {
+        width: 50%;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .containerIcon {
+        .containerlista {
+            p {
+                font-size: 7.5px;
+            }
+        }
+    }
+
+}

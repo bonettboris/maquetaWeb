@@ -1,0 +1,139 @@
+@import './Variables.scss';
+
+footer {
+    margin-top: 90px;
+
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        background: #1883fe;
+        padding: 0 80px 0 80px;
+        height: 100%;
+
+        .containeIasb {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 12%;
+
+            &__logotipoIasb {
+                width: 100px;
+                height: 50px;
+            }
+
+            p {
+                font-family: $nunito;
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            hr {
+                width: 50%;
+                height: 1px;
+                background-color: #ffffff;
+                border: none;
+                margin: 13px 0;
+            }
+
+            .p {
+                font-family: $nunito;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 1px 0 10px 0;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 10%;
+        margin-top: 15px;
+
+
+        p {
+            font-family: $nunito;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+
+        &__logotipo {
+            width: 110px;
+            height: 75px;
+        }
+    }
+
+    .textName {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerP {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin:  10px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        margin-top: 50px;
+
+        .footerContainer {
+            padding: 0 3%;
+
+            .containeIasb {
+                
+                p {
+                    font-size: 8px;
+                }
+
+                .p {
+                    font-size: 10px;
+                }
+
+                &__logotipoIasb {
+                    width: 70px;
+                    height: 30px;
+                }
+            }
+
+        }
+
+        .container {
+            padding: 0 5%;
+            justify-content: space-around;
+
+            p {
+                font-size: 9px;
+            }
+
+            &__logotipo {
+                width: 80px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 427px) {
+    footer {
+        .container {
+            display: flex;
+            flex-direction: column;
+            
+            &__logotipo {
+                width: 65px;
+                height: 45px;
+            }
+
+        }
+    }
+}

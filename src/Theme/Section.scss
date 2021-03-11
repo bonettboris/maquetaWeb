@@ -1,0 +1,168 @@
+@import './Variables.scss';
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 80px 0 80px;
+    margin-top: 100px;
+
+    p{
+        font-family: $nunito;
+        color: #134879;
+        font-weight: bold;
+    }
+
+    .containerTitle {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        h1 {
+            width: 40%;
+            text-align: center;
+            font-family: $nunito;
+            border-bottom: 1px solid #1883fe;
+            color: #1883fe;
+        }
+    }
+
+    .contaienerText {
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+    
+        .p {
+            margin-bottom: 20px;
+            color: #134879;
+            font-weight: bold;
+        }
+
+        .b {
+            color: #1883fe;
+            font-family: $nunito;
+            font-weight: bold;
+        }
+
+        .mapa {
+            margin-top: 30px;
+            border: 2px solid #1883fe;
+        }
+
+        h3 {
+            font-family: $nunito;
+            margin-top: 10px;
+            color: #474685;
+        }
+
+        .containerVictoria {
+            margin-top: 30px;
+
+            h4 {
+                margin-left: 25px;
+                font-family: $nunito;
+                color: #fba214;
+                font-weight: bold;
+            }
+
+            hr {
+                height: 1px;
+                width: 27%;
+                background-color: #fba214;
+                border: none;
+                margin-left: 25px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+
+    .formulario {
+        width: 40%;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    section {
+        padding: 0 2%;
+
+        p {
+            font-size: 10px;
+        }
+
+        .containerTitle {
+            h1 {
+                font-size: 12px;
+                height: 60%;
+            }
+        }
+
+        .contaienerText {
+            .p {
+                font-size: 10px;
+            }
+        }
+
+        .containerVictoria {
+            font-size: 12px;
+        }
+
+        .formulario {
+            width: 43%;
+        }
+    }
+}
+
+@media screen and (max-width: 427px) {
+    section {
+        margin-top: 50px;
+
+        .contaienerText {
+            flex-direction: column;
+
+            p {
+                text-align: center;
+                font-size: 11px;
+            }
+
+            .text {
+                width: 100%;
+            }
+
+            .containerVictoria {
+                font-size: 12px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+
+                h4 {
+                    margin-left: 0;
+                }
+
+                hr {
+                    margin-left: 0;
+                    width: 35%;
+                }
+            }
+        }
+
+        .containerTitle {
+            margin-bottom: 10px;
+        }
+
+        .formulario {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+}
